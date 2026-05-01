@@ -55,7 +55,6 @@
             </div>
 
             <div id="user-info">
-
                 <!-- Users table -->
                 <div class="table-wrapper">
                     <form method="get" class="search-bar">
