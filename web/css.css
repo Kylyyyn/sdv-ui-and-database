@@ -783,15 +783,24 @@ footer {
 
 /* Transaction Messages */
 .message-container {
-    margin: 15px 20px;
-    padding: 15px 20px;
+    position: fixed;
+    top: 60px;
+    left: 50%;
+    transform: translateX(-50%);
+    min-width: 320px;
+    max-width: 520px;
+    margin: 0;
+    padding: 14px 22px;
     border-radius: 8px;
+    font-family: 'StardewValley';
     font-size: 14px;
     font-weight: 500;
     animation: slideIn 0.3s ease-in-out;
     display: flex;
     align-items: center;
     gap: 10px;
+    z-index: 9999;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.18);
 }
 
 .message-container.success {

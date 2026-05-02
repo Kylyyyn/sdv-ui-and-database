@@ -26,7 +26,6 @@
     session.removeAttribute("successMessage");
     session.removeAttribute("errorMessage");
 %>
-%>
 <!DOCTYPE html>
 <html>
     <head>
@@ -229,5 +228,33 @@
                 </div>
             </div>
             <footer><%= footer%></footer>
+
+
+            <% if (successMessage != null) {%>
+            <div class="message-container success" id="txnToast">
+                <span class="message-icon"></span>
+                <span><%= successMessage%></span>
+            </div>
+            <% } else if (errorMessage != null) {%>
+            <div class="message-container error" id="txnToast">
+                <span class="message-icon"></span>
+                <span><%= errorMessage%></span>
+            </div>
+            <% }%>
+
+            <script>
+                (function () {
+                    var toast = document.getElementById('txnToast');
+                    if (toast) {
+                        setTimeout(function () {
+                            toast.style.transition = 'opacity 0.5s ease';
+                            toast.style.opacity = '0';
+                            setTimeout(function () {
+                                toast.remove();
+                            }, 500);
+                        }, 3500);
+                    }
+                })();
+            </script>
     </body>
 </html>
