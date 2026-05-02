@@ -114,6 +114,15 @@
         <url-pattern>/LogoutServlet</url-pattern>
     </servlet-mapping>
 
+    <servlet>
+        <servlet-name>ReportServlet</servlet-name>
+        <servlet-class>controller.ReportServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ReportServlet</servlet-name>
+        <url-pattern>/ReportServlet</url-pattern>
+    </servlet-mapping>
+
     <session-config>
         <session-timeout>5</session-timeout>
     </session-config>
@@ -145,6 +154,10 @@
     <filter-mapping>
         <filter-name>SessionFilter</filter-name>
         <url-pattern>/success.jsp</url-pattern>
+    </filter-mapping>
+    <filter-mapping>
+        <filter-name>SessionFilter</filter-name>
+        <url-pattern>/ReportServlet</url-pattern>
     </filter-mapping>
 
 </web-app>

@@ -8,7 +8,7 @@
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <title>Error - Session Expired</title>
-        <link rel="stylesheet" type="text/css" href="css.css">
+           <link rel="stylesheet" type="text/css" href="style.css">
     </head>
     <body>
         <header>

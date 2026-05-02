@@ -1,0 +1,14 @@
+[2026-05-02 10:54:32] [INFO] [START] Login attempt initiated. Email: andylouise@gmail.com
+[2026-05-02 10:54:32] [INFO] [CAPTCHA] Session flag confirmed for: andylouise@gmail.com
+[2026-05-02 10:54:32] [INFO] [USERNAME LOOKUP] Searching DB for email: andylouise@gmail.com
+[2026-05-02 10:54:32] [INFO] [USERNAME LOOKUP] Email found: andylouise@gmail.com
+[2026-05-02 10:54:32] [INFO] [PASSWORD VALIDATION] Comparing passwords for: andylouise@gmail.com
+[2026-05-02 10:54:32] [INFO] [SUCCESSFUL LOGIN] User authenticated: andylouise@gmail.com | Role: Admin
+[2026-05-02 10:54:32] [INFO] [END] Login process ended — success.
+[2026-05-02 10:57:59] [INFO] [START] Login attempt initiated. Email: andylouise@gmail.com
+[2026-05-02 10:57:59] [INFO] [CAPTCHA] Session flag confirmed for: andylouise@gmail.com
+[2026-05-02 10:57:59] [INFO] [USERNAME LOOKUP] Searching DB for email: andylouise@gmail.com
+[2026-05-02 10:57:59] [INFO] [USERNAME LOOKUP] Email found: andylouise@gmail.com
+[2026-05-02 10:57:59] [INFO] [PASSWORD VALIDATION] Comparing passwords for: andylouise@gmail.com
+[2026-05-02 10:57:59] [INFO] [SUCCESSFUL LOGIN] User authenticated: andylouise@gmail.com | Role: Admin
+[2026-05-02 10:57:59] [INFO] [END] Login process ended — success.
