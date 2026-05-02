@@ -31,7 +31,7 @@
             <div id="user-info">
                 <h3>Session Error</h3>
                 <p>You must be logged in to access this page.</p>
-                <p>Your session may have expired or you attempted to access this page directly.</p>
+                <p>Your session may have expired or you attempted to access<br>this page directly.</p>
             </div>
         </div>
 
