@@ -1,10 +1,3 @@
-
-<%-- REMOVE BEFORE SUBMITTING --%>
-<%
-    boolean devMode = Boolean.parseBoolean(application.getInitParameter("devMode"));
-%>
-<%-- REMOVE BEFORE SUBMITTING --%>
-
 <%@ page import="javax.servlet.ServletContext" %>
 <%
     ServletContext ctx = application;
@@ -21,7 +14,7 @@
         <script src="https://www.google.com/recaptcha/api.js" async defer></script>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <title>Stardew Valley Homepage</title>
-          <link rel="stylesheet" type="text/css" href="style.css">
+          <link rel="stylesheet" type="text/css" href="css.css">
     </head>
     <body>
         <header>
@@ -69,13 +62,7 @@
                                 <button type="button" class="img-btn clear-btn" onclick="clearFields()"></button>
                             </div>
                             <!-- for recaptcha --> 
-                            <%-- REPLACE BACK WITH: <div class="g-recaptcha" data-sitekey="<%= siteKey %>"></div> --%>
-                            <%-- REMOVE BEFORE SUBMITTING --%>
-                            <% if (!devMode) {%>
-                            <div class="g-recaptcha" data-sitekey="<%= siteKey%>"></div>
-                            <% }%>
-                            <%-- REMOVE BEFORE SUBMITTING --%>
-
+                            <div class="g-recaptcha" data-sitekey="<%= siteKey %>"></div> 
                         </form>
                     </div>
                 </div>

@@ -29,36 +29,10 @@ public class CaptchaServlet extends HttpServlet {
             HttpServletResponse response)
             throws ServletException, IOException {
 
-        /* REPLACE BACK WITH: 
         String secretKey = getServletContext().getInitParameter("recaptchaSecretKey");
         String recaptchaToken = request.getParameter("g-recaptcha-response");
 
         HttpSession session = request.getSession(true);
-*/
-
-        //REMOVE BEFORE SUBMITTING
-        boolean devMode = Boolean.parseBoolean(
-        getServletContext().getInitParameter("devMode")
-);
-
-// 🚀 BYPASS CAPTCHA COMPLETELY IN DEV MODE
-if (devMode) {
-    HttpSession session = request.getSession(true);
-    session.setAttribute("captchaAttempts", 0);
-    session.setAttribute("captchaVerified", true);
-
-    request.getRequestDispatcher("/LoginServlet").forward(request, response);
-    return;
-}
-
-// ⬇️ NORMAL FLOW CONTINUES BELOW (ONLY if NOT devMode)
-
-String secretKey = getServletContext().getInitParameter("recaptchaSecretKey");
-String recaptchaToken = request.getParameter("g-recaptcha-response");
-
-HttpSession session = request.getSession(true);
-
-//REMOVE BEFORE SUBMITTING
 
         int attempts = (session.getAttribute("captchaAttempts") != null)
                 ? (int) session.getAttribute("captchaAttempts") : 0;

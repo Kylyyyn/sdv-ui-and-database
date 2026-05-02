@@ -6,19 +6,12 @@
 
     <context-param>
         <param-name>Header</param-name>
-        <param-value>MP3 Stardew Player Database by Garcia and Hermoso</param-value>
+        <param-value>MP4 Stardew Player Database by Garcia and Hermoso</param-value>
     </context-param>
     <context-param>
         <param-name>Footer</param-name>
         <param-value>University of Santo Tomas S.Y. 2025-2026</param-value>
     </context-param>
-
-<!-- remove before submitting -->
-<context-param>
-    <param-name>devMode</param-name>
-    <param-value>true</param-value>
-</context-param>
-<!-- remove before submitting -->
 
     <context-param>
         <param-name>dbURL</param-name>

@@ -27,7 +27,7 @@
     <head>
         <meta charset="UTF-8">
         <title>Admin Dashboard</title>
-        <link rel="stylesheet" type="text/css" href="style.css">
+        <link rel="stylesheet" type="text/css" href="css.css">
     </head>
 
     <body class="admin-body">
@@ -169,13 +169,13 @@
                             <img src="images/Delete.png" onmouseover="this.src = 'images/Delete2.png'" onmouseout="this.src = 'images/Delete.png'" alt="Delete User" onerror="this.style.display='none';this.parentNode.innerHTML='✕ Delete';">
                         </button>
                         <button class="action-btn" id="LogOut" onclick="window.location.href = 'LogoutServlet'">
-                            <img src="images/LogOut.png" onmouseover="this.src = 'images/LogOut2.png'" onmouseout="this.src = 'images/LogOut.png'" alt="Delete User" onerror="this.style.display='none';this.parentNode.innerHTML='Log Out';">
+                            <img src="images/LogOut.png" onmouseover="this.src = 'images/LogOut2.png'" onmouseout="this.src = 'images/LogOut.png'" alt="Log Out" onerror="this.style.display='none';this.parentNode.innerHTML='Log Out';">
                         </button>
                         <button class="action-btn" id="downloadReport"
                                 onclick="window.location.href = 'ReportServlet?type=admin'">
-                            <img src="images/Report.png"
-                                 onmouseover="this.src = 'images/Report2.png'"
-                                 onmouseout="this.src = 'images/Report.png'"
+                            <img src="images/Report.PNG"
+                                 onmouseover="this.src = 'images/Report2.PNG'"
+                                 onmouseout="this.src = 'images/Report.PNG'"
                                  alt="Download Report"
                                  onerror="this.style.display='none'; this.parentNode.innerHTML='📄 Report';">
                         </button>

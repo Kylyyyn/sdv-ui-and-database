@@ -77,7 +77,7 @@ public class LoginServlet extends HttpServlet {
                         "Email is blank but password provided.", "ERROR_3");
             }
 
-            // ---- Delegate DB lookup to UserDAO ---- //
+            // Delegate DB lookup to UserDAO 
             UserDAO dao = new UserDAO(dbDriver, dbURL, dbUser, dbPass);
             logger.info("[USERNAME LOOKUP] Searching DB for email: " + email.trim());
 

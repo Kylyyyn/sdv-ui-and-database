@@ -22,7 +22,7 @@
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <title>Guest Dashboard</title>
-          <link rel="stylesheet" type="text/css" href="style.css">
+          <link rel="stylesheet" type="text/css" href="css.css">
     </head>
     <body>
         <header>
@@ -55,19 +55,23 @@
                 <p>Role: <%= role%></p>
             </div>
 
-            <div id="menuv2">
-                <div id="button-wrapper2">
-                        <button class="LogOut" id="LogOut" onclick="window.location.href='LogoutServlet'"></button>
+                <div id="menuv2">
+                        <button class="action-btn" id="LogOut" 
+                                onclick="window.location.href = 'LogoutServlet'">
+                            <img src="images/LogOut.png" 
+                                 onmouseover="this.src = 'images/LogOut2.png'" 
+                                 onmouseout="this.src = 'images/LogOut.png'" alt="Log Out" 
+                                 onerror="this.style.display='none';this.parentNode.innerHTML='Log Out';">
+                        </button>
                         <button class="action-btn" id="downloadReport"
-                                onclick="window.location.href = 'ReportServlet?type=admin'">
-                            <img src="images/Report.png"
-                                 onmouseover="this.src = 'images/Report2.png'"
-                                 onmouseout="this.src = 'images/Report.png'"
+                                onclick="window.location.href = 'ReportServlet?type=guest'">
+                            <img src="images/Report.PNG"
+                                 onmouseover="this.src = 'images/Report2.PNG'"
+                                 onmouseout="this.src = 'images/Report.PNG'"
                                  alt="Download Report"
                                  onerror="this.style.display='none'; this.parentNode.innerHTML='? Report';">
                         </button>
                 </div>
-            </div>
         </div>
         <footer>
             <%= footer%>
