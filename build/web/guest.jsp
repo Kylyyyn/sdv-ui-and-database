@@ -22,7 +22,7 @@
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <title>Guest Dashboard</title>
-        <link rel="stylesheet" type="text/css" href="css.css">
+          <link rel="stylesheet" type="text/css" href="style.css">
     </head>
     <body>
         <header>
@@ -58,6 +58,14 @@
             <div id="menuv2">
                 <div id="button-wrapper2">
                         <button class="LogOut" id="LogOut" onclick="window.location.href='LogoutServlet'"></button>
+                        <button class="action-btn" id="downloadReport"
+                                onclick="window.location.href = 'ReportServlet?type=admin'">
+                            <img src="images/Report.png"
+                                 onmouseover="this.src = 'images/Report2.png'"
+                                 onmouseout="this.src = 'images/Report.png'"
+                                 alt="Download Report"
+                                 onerror="this.style.display='none'; this.parentNode.innerHTML='? Report';">
+                        </button>
                 </div>
             </div>
         </div>

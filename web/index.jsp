@@ -21,7 +21,7 @@
         <script src="https://www.google.com/recaptcha/api.js" async defer></script>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <title>Stardew Valley Homepage</title>
-        <link rel="stylesheet" type="text/css" href="css.css">
+          <link rel="stylesheet" type="text/css" href="style.css">
     </head>
     <body>
         <header>

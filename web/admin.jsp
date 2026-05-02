@@ -27,7 +27,7 @@
     <head>
         <meta charset="UTF-8">
         <title>Admin Dashboard</title>
-        <link rel="stylesheet" type="text/css" href="css.css">
+        <link rel="stylesheet" type="text/css" href="style.css">
     </head>
 
     <body class="admin-body">
@@ -171,6 +171,14 @@
                         <button class="action-btn" id="LogOut" onclick="window.location.href = 'LogoutServlet'">
                             <img src="images/LogOut.png" onmouseover="this.src = 'images/LogOut2.png'" onmouseout="this.src = 'images/LogOut.png'" alt="Delete User" onerror="this.style.display='none';this.parentNode.innerHTML='Log Out';">
                         </button>
+                        <button class="action-btn" id="downloadReport"
+                                onclick="window.location.href = 'ReportServlet?type=admin'">
+                            <img src="images/Report.png"
+                                 onmouseover="this.src = 'images/Report2.png'"
+                                 onmouseout="this.src = 'images/Report.png'"
+                                 alt="Download Report"
+                                 onerror="this.style.display='none'; this.parentNode.innerHTML='📄 Report';">
+                        </button>
                     </div>
                     <script>
                         let selectedEmail = null;
@@ -203,7 +211,7 @@
                                 return;
                             }
                             let currentUser = "<%= email%>";
-                            //dmin cant delete own account
+                            //admin cant delete own account
                             if (selectedEmail === currentUser) {
                                 alert("You cannot delete your own account.");
                                 return;
@@ -218,4 +226,3 @@
             <footer><%= footer%></footer>
     </body>
 </html>
-

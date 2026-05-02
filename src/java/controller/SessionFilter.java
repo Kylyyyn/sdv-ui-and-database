@@ -19,7 +19,8 @@ public class SessionFilter implements Filter {
         boolean isProtected = path.equals("/admin.jsp")
                            || path.equals("/guest.jsp")
                            || path.equals("/addUser.jsp")
-                           || path.equals("/updateUser.jsp");
+                           || path.equals("/updateUser.jsp")
+                           || path.startsWith("/ReportServlet");
 
         if (isProtected) {
             try {
