@@ -56,6 +56,9 @@ public class AddUserServlet extends HttpServlet {
         UserDAO dao = new UserDAO(dbDriver, dbURL, dbUser, dbPass);
         try {
             dao.insert(newUser);
+            if (session != null) {
+                session.setAttribute("successMessage", "User '" + email + "' has been added successfully!");
+            }
             response.sendRedirect("admin.jsp");
         } catch (ClassNotFoundException e) {
             throw new ServletException("Driver not found: " + e.getMessage());

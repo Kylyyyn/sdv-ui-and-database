@@ -549,7 +549,7 @@ footer {
 }
 
 .table-wrapper {
-    width: 54%;     
+    width: 55%;     
     max-height: 230px;
     margin: 0 auto;
 }
@@ -560,6 +560,7 @@ footer {
     width: 100%;         
     table-layout: fixed; 
     border-collapse: collapse;
+    text-align: center;
 }
 
 .admin-table thead {
@@ -578,12 +579,12 @@ footer {
 
 .admin-table th:nth-child(1),
 .admin-table td:nth-child(1) {
-    width: 45%;
+    width: 40%;
 }
 
 .admin-table th:nth-child(2),
 .admin-table td:nth-child(2) {
-    width: 40%;
+    width: 45%;
 }
 
 .admin-table th:nth-child(3),
@@ -624,17 +625,14 @@ footer {
     background-repeat: no-repeat;
 }
 
-/* PREV normal */
 .prev {
     background-image: url('images/prev.png');
 }
 
-/* NEXT normal */
 .next {
     background-image: url('images/next.png');
 }
 
-/* HOVER effects */
 .prev:hover {
     background-image: url('images/prev_hover.png'); transform: scale(1.1);
 }
@@ -643,10 +641,9 @@ footer {
     background-image: url('images/next_hover.png'); transform: scale(1.1); 
 }
 
-/* DISABLED state */
 .disabled {
     cursor: default;
-    pointer-events: none; /* disables clicking */
+    pointer-events: none;
 }
 
 .prev.disabled {
@@ -782,4 +779,54 @@ footer {
     transform: scale(0.75);
     transform-origin: center;
     margin-bottom: 10px;
+}
+
+/* Transaction Messages */
+.message-container {
+    margin: 15px 20px;
+    padding: 15px 20px;
+    border-radius: 8px;
+    font-size: 14px;
+    font-weight: 500;
+    animation: slideIn 0.3s ease-in-out;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.message-container.success {
+    background-color: #d4edda;
+    border-left: 4px solid #28a745;
+    color: #155724;
+}
+
+.message-container.error {
+    background-color: #f8d7da;
+    border-left: 4px solid #dc3545;
+    color: #721c24;
+}
+
+.message-icon {
+    font-size: 18px;
+    flex-shrink: 0;
+    font-weight: bold;
+}
+
+.message-container.success .message-icon::before {
+    content: "✓";
+}
+
+.message-container.error .message-icon::before {
+    content: "✕";
+}
+
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }

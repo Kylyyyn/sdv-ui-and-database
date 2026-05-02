@@ -19,7 +19,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Add User</title>
-      <link rel="stylesheet" type="text/css" href="style.css">
+      <link rel="stylesheet" type="text/css" href="css.css">
 </head>
 
 <body class="admin-body">

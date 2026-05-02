@@ -52,6 +52,9 @@ public class UpdateUserServlet extends HttpServlet {
         UserDAO dao = new UserDAO(dbDriver, dbURL, dbUser, dbPass);
         try {
             dao.update(originalEmail, encryptedPassword, role);
+            if (session != null) {
+                session.setAttribute("successMessage", "User '" + originalEmail + "' has been updated successfully!");
+            }
             response.sendRedirect("admin.jsp");
         } catch (ClassNotFoundException e) {
             throw new ServletException("Driver not found: " + e.getMessage());

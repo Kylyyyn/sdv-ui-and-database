@@ -21,6 +21,11 @@
         response.sendRedirect("error_session.jsp");
         return;
     }
+    String successMessage = (String) session.getAttribute("successMessage");
+    String errorMessage = (String) session.getAttribute("errorMessage");
+    session.removeAttribute("successMessage");
+    session.removeAttribute("errorMessage");
+%>
 %>
 <!DOCTYPE html>
 <html>

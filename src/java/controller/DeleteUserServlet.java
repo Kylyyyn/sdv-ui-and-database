@@ -44,6 +44,9 @@ public class DeleteUserServlet extends HttpServlet {
         UserDAO dao = new UserDAO(dbDriver, dbURL, dbUser, dbPass);
         try {
             dao.delete(email);
+            if (session != null) {
+                session.setAttribute("successMessage", "User '" + email + "' has been deleted successfully!");
+            }
             response.sendRedirect("admin.jsp");
         } catch (ClassNotFoundException e) {
             throw new ServletException("Driver not found: " + e.getMessage());
