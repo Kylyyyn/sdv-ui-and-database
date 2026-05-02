@@ -20,7 +20,7 @@
 <body>
     <header><%= header %></header>
 
-    <div id="background" style="pointer-events: none;">
+    <div id="background" class="no-pointer">
         <img class="twilight"           src="images/Twilight.png">
         <img class="layer farcloudA"    src="images/farcloud-1.png">
         <img class="layer farcloudB"    src="images/farcloud-2.png">

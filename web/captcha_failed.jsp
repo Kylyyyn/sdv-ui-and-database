@@ -15,7 +15,7 @@
         <header>
             <%= header %>
         </header>
-        <div id="background" style="pointer-events: none;">
+        <div id="background" class="no-pointer">
             <img class="twilight" src="images/Twilight.png">
             <img class="layer farcloudA" src="images/farcloud-1.png">
             <img class="layer farcloudB" src="images/farcloud-2.png">
@@ -34,31 +34,18 @@
                 <p>Please go back and try again.</p>
             </div>
         </div>
-        <div id="menu" style="top: 80%;">
-            <div id="button-wrapper2" style="opacity: 1; animation: none;">
+        <div id="menu" class="menu-404">
+            <div id="button-wrapper2" class="button-visible">
                 <form action="index.jsp" method="get">
-                    <button type="submit"
-                        onmouseover="this.style.transform='scale(1.1)'"
-                        onmouseout="this.style.transform='scale(1)'"
-                        style="
-                            font-family: 'StardewValley';
-                            font-size: 18px;
-                            color: #7b5b58;
-                            background: url('images/textfield-bg.png') no-repeat center;
-                            background-size: 100% 100%;
-                            width: 180px;
-                            height: 50px;
-                            border: none;
-                            cursor: pointer;
-                            transition: transform 0.2s ease-in-out;
-                        ">
+                    <button type="submit" class="back-btn">
                         Back
                     </button>
                 </form>
             </div>
         </div>
+
         <footer>
-            <%= footer %>
+            <%= footer%>
         </footer>
     </body>
 </html>

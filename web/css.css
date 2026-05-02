@@ -303,18 +303,6 @@ body {
     100% { transform: translateY(5px); }
 }
 
-/* wilight overlay */
-.Twilight {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100vw;
-    pointer-events: none;
-    z-index: 2;
-    opacity: 0.7;
-    animation: sparkleFade 2s ease-in-out infinite alternate;
-}
-
 @keyframes sparkleFade {
     0%   { opacity: 0.3; transform: translateY(0) scale(1); }
     50%  { opacity: 1;   transform: translateY(-5px) scale(1.05); }
@@ -380,7 +368,14 @@ footer {
     text-align: center;
     font-family: 'StardewValley';
 }
-
+#user-info h3 {
+    font-size: 20px;  
+    margin-bottom: 10px;
+}
+#user-info p {
+    font-size: 14px;   
+    margin: 5px 0;
+}
 #loginFormContainer {
     position: absolute;
     top: 75%;
@@ -510,7 +505,6 @@ footer {
     z-index: 10;
     box-sizing: border-box;
 }
-
 .admin-container .board-bg {
     position: absolute;
     top: 0;
@@ -521,7 +515,6 @@ footer {
     z-index: -1;
     pointer-events: none;
 }
-
 .admin-actions {
     position: absolute;
     left: 50%;
@@ -531,7 +524,6 @@ footer {
     gap: 20px;
     z-index: 11;
 }
-
 .action-btn {
     background: none;
     border: none;
@@ -539,21 +531,17 @@ footer {
     cursor: pointer;
     transition: transform 0.2s;
 }
-
 .action-btn:hover { transform: scale(1.08); }
-
 .action-btn img {
     width: 179px;
     height: 140px;
     display: block;
 }
-
 .table-wrapper {
     width: 55%;     
     max-height: 230px;
     margin: 0 auto;
 }
-
 .admin-table {
     font-family: 'StardewValley';
     color: #5c4033;
@@ -562,45 +550,36 @@ footer {
     border-collapse: collapse;
     text-align: center;
 }
-
 .admin-table thead {
     text-align: center;
 }
-
 .admin-table th {
     font-size: 13px;
     border-bottom: 2px solid rgba(92, 64, 51, 0.3);
 }
-
 .admin-table td {
     font-size: 12px;
     border-bottom: 1px solid rgba(92, 64, 51, 0.15);
 }
-
 .admin-table th:nth-child(1),
 .admin-table td:nth-child(1) {
     width: 40%;
 }
-
 .admin-table th:nth-child(2),
 .admin-table td:nth-child(2) {
     width: 45%;
 }
-
 .admin-table th:nth-child(3),
 .admin-table td:nth-child(3) {
     width: 15%;
 }
-
 .admin-table tbody tr:hover {
     background-color: rgba(255, 255, 255, 0.4);
     cursor: pointer;
 }
-
 .admin-table tbody tr.selected {
     background-color: rgba(255, 220, 100, 0.45);
 }
-
 .pagination {
     position: fixed;
     bottom: 146px; 
@@ -624,32 +603,25 @@ footer {
     background-size: contain;
     background-repeat: no-repeat;
 }
-
 .prev {
     background-image: url('images/prev.png');
 }
-
 .next {
     background-image: url('images/next.png');
 }
-
 .prev:hover {
     background-image: url('images/prev_hover.png'); transform: scale(1.1);
 }
-
 .next:hover {
     background-image: url('images/next_hover.png'); transform: scale(1.1); 
 }
-
 .disabled {
     cursor: default;
     pointer-events: none;
 }
-
 .prev.disabled {
     background-image: url('images/prev2.png');
 }
-
 .next.disabled {
     background-image: url('images/next2.png');
 }
@@ -661,7 +633,6 @@ footer {
     padding: 80px 20px;
     box-sizing: border-box;
 }
-
 .form-container {
     position: relative;
     width: 580px;
@@ -670,7 +641,6 @@ footer {
     border-radius: 0;
     box-sizing: border-box;
 }
-
 .form-container .board-bg {
     position: absolute;
     top: 0;
@@ -681,7 +651,6 @@ footer {
     z-index: -1;
     pointer-events: none;
 }
-
 .form-title {
     font-family: 'StardewValley';
     color: #5c4033;
@@ -689,20 +658,17 @@ footer {
     text-align: center;
     margin: 0 0 18px 0;
 }
-
 .form-group {
     display: flex;
     flex-direction: column;
     margin-bottom: 12px;
 }
-
 .form-group label {
     font-family: 'StardewValley';
     color: #7b5b58;
     font-size: 14px;
     margin-bottom: 4px;
 }
-
 .form-group input,
 .form-group select {
     font-family: 'StardewValley';
@@ -717,19 +683,16 @@ footer {
     width: 100%;
     box-sizing: border-box;
 }
-
 .form-group input:focus,
 .form-group select:focus {
     border-color: #a0785a;
 }
-
 .form-actions {
     display: flex;
     justify-content: center;
     gap: 16px;
     margin-top: 18px;
 }
-
 .update-btn,
 .save-btn,
 .cancel-btn {
@@ -742,35 +705,29 @@ footer {
     transition: transform 0.2s, background-color 0.2s;
     display: inline-block;
 }
-
 .update-btn {
     background-color: rgba(180, 210, 240, 0.85);
     border: 2px solid #8aaac4;
     color: #2a4a6a;
 }
-
 .update-btn:hover {
     background-color: rgba(140, 180, 220, 0.95);
     transform: scale(1.05);
 }
-
 .save-btn {
     background-color: rgba(180, 220, 180, 0.85);
     border: 2px solid #8aab8a;
     color: #3a5a3a;
 }
-
 .save-btn:hover {
     background-color: rgba(140, 200, 140, 0.95);
     transform: scale(1.05);
 }
-
 .cancel-btn {
     background-color: rgba(220, 200, 180, 0.85);
     border: 2px solid #c4a882;
     color: #5c4033;
 }
-
 .cancel-btn:hover {
     background-color: rgba(200, 170, 140, 0.95);
     transform: scale(1.05);
@@ -780,8 +737,6 @@ footer {
     transform-origin: center;
     margin-bottom: 10px;
 }
-
-/* Transaction Messages */
 .message-container {
     position: fixed;
     top: 60px;
@@ -802,33 +757,27 @@ footer {
     z-index: 9999;
     box-shadow: 0 4px 16px rgba(0,0,0,0.18);
 }
-
 .message-container.success {
     background-color: #d4edda;
     border-left: 4px solid #28a745;
     color: #155724;
 }
-
 .message-container.error {
     background-color: #f8d7da;
     border-left: 4px solid #dc3545;
     color: #721c24;
 }
-
 .message-icon {
     font-size: 18px;
     flex-shrink: 0;
     font-weight: bold;
 }
-
 .message-container.success .message-icon::before {
     content: "✓";
 }
-
 .message-container.error .message-icon::before {
     content: "✕";
 }
-
 @keyframes slideIn {
     from {
         opacity: 0;
@@ -838,4 +787,29 @@ footer {
         opacity: 1;
         transform: translateY(0);
     }
+}
+.no-pointer {
+    pointer-events: none;
+}
+.menu-404 {
+    top: 80% !important;
+}
+.button-visible {
+    opacity: 1 !important;
+    animation: none !important;
+}
+.back-btn {
+    font-family: 'StardewValley';
+    font-size: 18px;
+    color: #7b5b58;
+    background: url('images/textfield-bg.png') no-repeat center;
+    background-size: 100% 100%;
+    width: 180px;
+    height: 50px;
+    border: none;
+    cursor: pointer;
+    transition: transform 0.2s ease-in-out;
+}
+.back-btn:hover {
+    transform: scale(1.1);
 }
