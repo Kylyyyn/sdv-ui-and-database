@@ -1,15 +1,12 @@
-/* base */
 @font-face {
     font-family: 'StardewValley';
     src: url('fonts/Poppins-Medium.ttf') format('truetype');
 }
-
 body {
     margin: 0;
     overflow: hidden;
     background-color: #ffefef;
 }
-
 .g-recaptcha {
     display: inline-block;
     border: 2px solid #ccc;
@@ -17,15 +14,12 @@ body {
     padding: 4px;
     background: #f9f9f9;
 }
-
-/* whole web background*/
 #camera {
     position: absolute;
     width: 100vw;
     height: 100vh;
     overflow: hidden;
 }
-
 #title-scene {
     position: relative;
     animation-name: floatUp;
@@ -33,7 +27,6 @@ body {
     animation-timing-function: ease-out;
     animation-fill-mode: forwards;
 }
-
 #background {
     position: absolute;
     width: 100%;
@@ -42,15 +35,12 @@ body {
     background-repeat: repeat-x;
     background-size: auto 100%;
 }
-
 .layer {
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
     pointer-events: none;
 }
-
-/* Clouds */
 .bigcloud {
     left: 80%;
     bottom: 10px;
@@ -58,12 +48,10 @@ body {
     animation: bigCloud 30s ease-out;
     animation-fill-mode: forwards;
 }
-
 @keyframes bigCloud {
     from { transform: translateX(15vw); }
     to   { transform: translateX(-20vw); }
 }
-
 .farcloudA {
     max-width: 100px;
     bottom: 200px;
@@ -71,12 +59,10 @@ body {
     animation: farCloudA 40s ease-out;
     animation-fill-mode: forwards;
 }
-
 @keyframes farCloudA {
     from { transform: translateX(-60vw); }
     to   { transform: translateX(-20vw); }
 }
-
 .farcloudB {
     max-width: 200px;
     bottom: -90px;
@@ -84,12 +70,10 @@ body {
     animation: farCloudB 40s ease-out;
     animation-fill-mode: forwards;
 }
-
 @keyframes farCloudB {
     from { transform: translateX(-60vw); }
     to   { transform: translateX(20vw); }
 }
-
 .farcloudC {
     max-width: 400px;
     bottom: -20px;
@@ -99,12 +83,10 @@ body {
     animation-fill-mode: forwards;
     animation-delay: 10s;
 }
-
 @keyframes farCloudC {
     from { transform: translateX(50vw); }
     to   { transform: translateX(30vw); }
 }
-
 .cloudA {
     max-width: 200px;
     bottom: 600px;
@@ -112,7 +94,6 @@ body {
     animation: cloudL 80s ease-in-out infinite;
     animation-fill-mode: forwards;
 }
-
 .cloudB {
     max-width: 250px;
     bottom: 300px;
@@ -120,13 +101,11 @@ body {
     animation: cloudL 150s ease-out infinite;
     animation-fill-mode: forwards;
 }
-
 .b2 {
     max-width: 220px;
     top: 200px;
     animation: cloudR 90s ease-out;
 }
-
 .cloudC {
     max-width: 300px;
     bottom: 250px;
@@ -134,25 +113,20 @@ body {
     animation: cloudR 85s ease-in-out infinite;
     animation-fill-mode: forwards;
 }
-
 .a2 {
     max-width: 150px;
     top: 50px;
     animation: cloudR 100s ease-in-out;
     animation-delay: 5s;
 }
-
 @keyframes cloudL {
     from { transform: translateX(-70vw); }
     to   { transform: translateX(50vw); }
 }
-
 @keyframes cloudR {
     from { transform: translateX(50vw); }
     to   { transform: translateX(-60vw); }
 }
-
-/* Mountains */
 .mountain.far {
     max-width: 1700px;
     left: 45%;
@@ -161,11 +135,9 @@ body {
     animation: mountainRiseFar 4s ease-out;
     animation-fill-mode: forwards;
 }
-
 .mountain.far.static {
     animation: none;
 }
-
 .mountain.mid {
     max-width: 1700px;
     left: 55%;
@@ -174,40 +146,32 @@ body {
     animation: mountainRiseMid 3.5s ease-out;
     animation-fill-mode: forwards;
 }
-
 .mountain.mid.static {
     animation: none;
 }
-
 .mountain.near {
     max-width: 1600px;
     bottom: -400px;
     z-index: 5;
 }
-
 @keyframes mountainRiseFar {
     from { transform: translateX(-50%) translateY(120px); }
     to   { transform: translateX(-50%) translateY(0); }
 }
-
 @keyframes mountainRiseMid {
     from { transform: translateX(-50%) translateY(90px); }
     to   { transform: translateX(-50%) translateY(0); }
 }
-
 .greenery {
     width: 1536px;
     bottom: -400px;
     z-index: 6;
 }
-
 .mist {
     max-width: 1600px;
     bottom: -400px;
     z-index: 7;
 }
-
-/* Title & Board */
 .title {
     position: absolute;
     top: 30%;
@@ -217,18 +181,14 @@ body {
     height: auto;
     z-index: 2;
 }
-
 .board {
     position: relative;
     top: 40%;
 }
-
 @keyframes floatUp {
     from { transform: translateY(-400px); }
     to   { transform: translateY(0); }
 }
-
-/* Menus */
 #menu {
     position: absolute;
     top: 65%;
@@ -240,7 +200,6 @@ body {
     justify-content: center;
     z-index: 8;
 }
-
 #menuv2 {
     position: absolute;
     top: 73%;
@@ -252,29 +211,23 @@ body {
     justify-content: center;
     z-index: 9;
 }
-
-/* Button Wrappers */
 #button-wrapper {
     opacity: 0;
     animation: floatDownFade 1.5s ease-out, floatIdle 2s ease-in-out infinite alternate;
     animation-fill-mode: forwards;
     animation-delay: 8s;
 }
-
 #button-wrapper2 {
     opacity: 0;
     animation: floatDownFade 1.5s ease-out;
     animation-fill-mode: forwards;
 }
-
 .button-wrapper {
     animation: floatDownFade 1.5s ease-out, floatIdle 2s ease-in-out infinite alternate;
     animation-fill-mode: forwards;
     animation-delay: 10s;
     opacity: 0;
 }
-
-/* Nav Buttons */
 .LogIn, .LogOut {
     width: 179px;
     height: 140px;
@@ -286,32 +239,23 @@ body {
     cursor: pointer;
     transition: transform 0.2s ease-in-out;
 }
-
 .LogIn { background-image: url("images/LogIn.png"); }
 .LogIn:hover { background-image: url("images/LogIn2.png"); transform: scale(1.1); }
-
 .LogOut { background-image: url("images/LogOut.png"); }
 .LogOut:hover { background-image: url("images/LogOut2.png"); transform: scale(1.1); }
-
 @keyframes floatDownFade {
     0%   { opacity: 0; transform: translateY(-90px); }
     100% { opacity: 1; transform: translateY(0); }
 }
-
 @keyframes floatIdle {
     0%   { transform: translateY(0); }
     100% { transform: translateY(5px); }
 }
-
 @keyframes sparkleFade {
     0%   { opacity: 0.3; transform: translateY(0) scale(1); }
     50%  { opacity: 1;   transform: translateY(-5px) scale(1.05); }
     100% { opacity: 0.3; transform: translateY(0) scale(1); }
 }
-
-
-/* header footer */
-
 header {
     position: absolute;
     background-image: url("images/Header.png");
@@ -328,7 +272,6 @@ header {
     text-align: center;
     font-family: 'StardewValley';
 }
-
 footer {
     position: absolute;
     background-image: url("images/Footer.PNG");
@@ -345,12 +288,8 @@ footer {
     text-align: center;
     font-family: 'StardewValley';
 }
-
 .admin-body header { position: fixed; }
 .admin-body footer { position: fixed; }
-
-
-
 #user-info {
     position: absolute;
     top: 40%;
