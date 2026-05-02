@@ -172,7 +172,7 @@ public class LoginServlet extends HttpServlet {
 
     private void setupLogger() {
         if (logger != null) return;
-        logger = Logger.getLogger("LoginServlet");
+        logger = Logger.getLogger("AppLogger");
         logger.setUseParentHandlers(false);
         try {
             String appRoot = getServletContext().getRealPath("/");

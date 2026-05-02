@@ -3,39 +3,11 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/C:/Users/kylyy/OneDrive/Documents/2ndYrProjects/ICS2609_2CSD_HERMOSO_GARCIA/web/error_1.jsp</file>
-            <file>file:/C:/Users/kylyy/OneDrive/Documents/2ndYrProjects/ICS2609_2CSD_HERMOSO_GARCIA/web/index.jsp</file>
-            <file>file:/C:/Users/kylyy/OneDrive/Documents/2ndYrProjects/ICS2609_2CSD_HERMOSO_GARCIA/web/error_session.jsp</file>
-            <file>file:/C:/Users/kylyy/OneDrive/Documents/2ndYrProjects/ICS2609_2CSD_HERMOSO_GARCIA/src/java/controller/Encryption.java</file>
-            <file>file:/C:/Users/kylyy/OneDrive/Documents/2ndYrProjects/ICS2609_2CSD_HERMOSO_GARCIA/src/java/controller/DeleteUserServlet.java</file>
-            <file>file:/C:/Users/kylyy/OneDrive/Documents/2ndYrProjects/ICS2609_2CSD_HERMOSO_GARCIA/src/java/controller/Error404.java</file>
-            <file>file:/C:/Users/kylyy/OneDrive/Documents/2ndYrProjects/ICS2609_2CSD_HERMOSO_GARCIA/web/error_2.jsp</file>
-            <file>file:/C:/Users/kylyy/OneDrive/Documents/2ndYrProjects/ICS2609_2CSD_HERMOSO_GARCIA/web/WEB-INF/web.xml</file>
+            <file>file:/C:/Users/kylyy/OneDrive/Documents/2ndYrProjects/ICS2609_2CSD_HERMOSO_GARCIA/src/java/controller/ReportServlet.java</file>
             <file>file:/C:/Users/kylyy/OneDrive/Documents/2ndYrProjects/ICS2609_2CSD_HERMOSO_GARCIA/web/admin.jsp</file>
-            <file>file:/C:/Users/kylyy/OneDrive/Documents/2ndYrProjects/ICS2609_2CSD_HERMOSO_GARCIA/web/captcha_failed.jsp</file>
-            <file>file:/C:/Users/kylyy/OneDrive/Documents/2ndYrProjects/ICS2609_2CSD_HERMOSO_GARCIA/src/java/controller/NullValueException.java</file>
-            <file>file:/C:/Users/kylyy/OneDrive/Documents/2ndYrProjects/ICS2609_2CSD_HERMOSO_GARCIA/web/addUser.jsp</file>
-            <file>file:/C:/Users/kylyy/OneDrive/Documents/2ndYrProjects/ICS2609_2CSD_HERMOSO_GARCIA/src/java/controller/CaptchaServlet.java</file>
-            <file>file:/C:/Users/kylyy/OneDrive/Documents/2ndYrProjects/ICS2609_2CSD_HERMOSO_GARCIA/src/java/controller/AddUserServlet.java</file>
-            <file>file:/C:/Users/kylyy/OneDrive/Documents/2ndYrProjects/ICS2609_2CSD_HERMOSO_GARCIA/web/updateUser.jsp</file>
-            <file>file:/C:/Users/kylyy/OneDrive/Documents/2ndYrProjects/ICS2609_2CSD_HERMOSO_GARCIA/web/noLoginCredentials.jsp</file>
-            <file>file:/C:/Users/kylyy/OneDrive/Documents/2ndYrProjects/ICS2609_2CSD_HERMOSO_GARCIA/web/error_4.jsp</file>
-            <file>file:/C:/Users/kylyy/OneDrive/Documents/2ndYrProjects/ICS2609_2CSD_HERMOSO_GARCIA/src/java/controller/InvalidSessionException.java</file>
-            <file>file:/C:/Users/kylyy/OneDrive/Documents/2ndYrProjects/ICS2609_2CSD_HERMOSO_GARCIA/web/error_3.jsp</file>
-            <file>file:/C:/Users/kylyy/OneDrive/Documents/2ndYrProjects/ICS2609_2CSD_HERMOSO_GARCIA/web/success.jsp</file>
-            <file>file:/C:/Users/kylyy/OneDrive/Documents/2ndYrProjects/ICS2609_2CSD_HERMOSO_GARCIA/web/guest.jsp</file>
             <file>file:/C:/Users/kylyy/OneDrive/Documents/2ndYrProjects/ICS2609_2CSD_HERMOSO_GARCIA/src/java/controller/SessionFilter.java</file>
-            <file>file:/C:/Users/kylyy/OneDrive/Documents/2ndYrProjects/ICS2609_2CSD_HERMOSO_GARCIA/src/java/controller/UpdateUserServlet.java</file>
-            <file>file:/C:/Users/kylyy/OneDrive/Documents/2ndYrProjects/ICS2609_2CSD_HERMOSO_GARCIA/src/java/controller/AuthenticationException.java</file>
-            <file>file:/C:/Users/kylyy/OneDrive/Documents/2ndYrProjects/ICS2609_2CSD_HERMOSO_GARCIA/src/java/controller/LogoutServlet.java</file>
-            <file>file:/C:/Users/kylyy/OneDrive/Documents/2ndYrProjects/ICS2609_2CSD_HERMOSO_GARCIA/web/css.css</file>
+            <file>file:/C:/Users/kylyy/OneDrive/Documents/2ndYrProjects/ICS2609_2CSD_HERMOSO_GARCIA/web/addUser.jsp</file>
             <file>file:/C:/Users/kylyy/OneDrive/Documents/2ndYrProjects/ICS2609_2CSD_HERMOSO_GARCIA/src/java/controller/LoginServlet.java</file>
-            <file>file:/C:/Users/kylyy/OneDrive/Documents/2ndYrProjects/ICS2609_2CSD_HERMOSO_GARCIA/web/error404.jsp</file>
-            <file>file:/C:/Users/kylyy/OneDrive/Documents/2ndYrProjects/ICS2609_2CSD_HERMOSO_GARCIA/src/java/model/User.java</file>
-            <file>file:/C:/Users/kylyy/OneDrive/Documents/2ndYrProjects/ICS2609_2CSD_HERMOSO_GARCIA/web/images/Report.PNG</file>
-            <file>file:/C:/Users/kylyy/OneDrive/Documents/2ndYrProjects/ICS2609_2CSD_HERMOSO_GARCIA/web/captcha_error.jsp</file>
-            <file>file:/C:/Users/kylyy/OneDrive/Documents/2ndYrProjects/ICS2609_2CSD_HERMOSO_GARCIA/web/noCRUDCredentials.jsp</file>
-            <file>file:/C:/Users/kylyy/OneDrive/Documents/2ndYrProjects/ICS2609_2CSD_HERMOSO_GARCIA/web/generic_error.jsp</file>
         </group>
     </open-files>
 </project-private>
